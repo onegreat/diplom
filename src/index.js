@@ -1,3 +1,4 @@
-import buttonCall from "./modules/button_call";
+import modal from "./modules/modal";
 
-buttonCall()
+
+modal()
