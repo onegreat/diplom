@@ -9,8 +9,6 @@ const modal = () => {
     const modalFormPhone = document.querySelector('#tel')
     // const modalFormMail = document.querySelector('#form3-email')
 
-    console.log(modalOverlay)
-
 
     modalFormName.addEventListener('blur', (e) => {
         e.target.value = e.target.value.replace(/[^А-Яа-я -]/gi, '').replace(/\ \ +/gi, ' ').replace(/\-\-+/gi, '-').replace(/^\s/g, '').replace(/\s$/g, '').toLowerCase().replace(/([^а-я]|^)([а-я])(?=[а-я]{2})/g, function (_, g1, g2) {
@@ -33,7 +31,7 @@ const modal = () => {
                     modal.style.display = 'block'
                     modal.style.opacity = '0'
                     setTimeout(() => {
-                        modal.style.transition = 'all 3s ease'
+                        modal.style.transition = 'all 1s ease'
                         modal.style.opacity = '1'
                     })
                 }
