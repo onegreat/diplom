@@ -51,6 +51,14 @@ const modal = () => {
         modal.style.opacity = '0'
     })
 
+    modalOverlay.addEventListener('click', (e) => {
+        console.log(e.target)
+
+        modal.style.display = 'none'
+        modalOverlay.style.display = 'none'
+        modal.style.opacity = '0'
+    })
+
     console.log(buttons)
 }
 
