@@ -7,7 +7,9 @@ const modal = () => {
     const modalClose = document.querySelector('.modal-close')
     const modalFormName = document.querySelector('#fio')
     const modalFormPhone = document.querySelector('#tel')
-    // const modalFormMail = document.querySelector('#form3-email')
+    const body = document.body
+
+    console.log(body);
 
 
     modalFormName.addEventListener('blur', (e) => {
@@ -37,27 +39,26 @@ const modal = () => {
                 }
             });
         }
+        body.classList.add('disable-scroll')
         modalOverlay.style.display = 'block'
         modal.style.display = 'block'
     })
 
     modalClose.addEventListener('click', (e) => {
-        console.log(e.target)
-
+        body.classList.remove('disable-scroll')
         modal.style.display = 'none'
         modalOverlay.style.display = 'none'
         modal.style.opacity = '0'
     })
 
     modalOverlay.addEventListener('click', (e) => {
-        console.log(e.target)
-
+        body.classList.remove('disable-scroll')
         modal.style.display = 'none'
         modalOverlay.style.display = 'none'
         modal.style.opacity = '0'
     })
 
-    console.log(buttons)
+
 }
 
 export default modal
