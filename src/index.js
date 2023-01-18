@@ -3,3 +3,5 @@ import linkAnim from "./modules/linkAnimation";
 
 modal()
 linkAnim()
+
+console.log('start');
