@@ -1,21 +1,4 @@
 const slider = () => {
-    const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        navigation: {
-            nextEl: ".arrow-left",
-            prevEl: ".arrow-right",
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 2,
-            },
-            1200: {
-                slidesPerView: 3,
-            },
-        },
-    });
 
     const swiperTop = new Swiper(".swiper", {
         slidesPerView: 1,
@@ -28,6 +11,18 @@ const slider = () => {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
+        },
+    });
+
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        loopedSlides: 3,
+        spaceBetween: 10,
+
+        loop: true,
+        navigation: {
+            nextEl: ".arrow-right",
+            prevEl: ".arrow-left",
         },
     });
 };
