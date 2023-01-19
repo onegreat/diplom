@@ -1,8 +1,17 @@
 const linkAnim = () => {
+    const menu = document.querySelectorAll('.top-menu>ul>li')
 
-    const scrollAnim = document.querySelector('html')
-    scrollAnim.style.scrollBehavior = 'smooth'
+    menu.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault()
+            const scrollDest = document.getElementById(e.target.getAttribute("href").substring(1))
 
+            scrollDest.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    })
 }
 
 export default linkAnim
