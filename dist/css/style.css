@@ -1302,6 +1302,7 @@ video#video_background {
 /**** services section *****/
 
 .services-arrow {
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 }

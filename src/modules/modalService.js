@@ -7,9 +7,7 @@ const modalService = () => {
 
     const btn = document.querySelector('.up');
 
-    console.log(btnService);
-    btnService
-    //модальное окно по кнопке Оформить заказ
+
     slideBtn.forEach((item) => {
         item.addEventListener('click', function () {
             modal.style.display = 'block';
