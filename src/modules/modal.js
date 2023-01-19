@@ -1,13 +1,13 @@
 import { animate } from "./helpers";
 
 const modal = () => {
-    const buttons = document.getElementById('callback-btn')
-    const modal = document.querySelector('.modal-callback')
-    const modalOverlay = document.querySelector('.modal-overlay')
-    const modalClose = document.querySelector('.modal-close')
-    const modalFormName = document.querySelector('#fio')
-    const modalFormPhone = document.querySelector('#tel')
-    const body = document.body
+    const buttons = document.getElementById('callback-btn');
+    const modal = document.querySelector('.modal-callback');
+    const modalOverlay = document.querySelector('.modal-overlay');
+    const modalClose = document.querySelector('.modal-close');
+    const modalFormName = document.querySelector('#fio');
+    const modalFormPhone = document.querySelector('#tel');
+    const body = document.body;
 
 
     // modalFormName.addEventListener('blur', (e) => {
@@ -28,32 +28,32 @@ const modal = () => {
                     return timeFraction;
                 },
                 draw(progress) {
-                    modal.style.display = 'block'
-                    modal.style.opacity = '0'
+                    modal.style.display = 'block';
+                    modal.style.opacity = '0';
                     setTimeout(() => {
-                        modal.style.transition = 'all 1s ease'
-                        modal.style.opacity = '1'
+                        modal.style.transition = 'all 1s ease';
+                        modal.style.opacity = '1';
                     })
                 }
             });
         }
-        body.classList.add('disable-scroll')
-        modalOverlay.style.display = 'block'
-        modal.style.display = 'block'
+        body.classList.add('disable-scroll');
+        modalOverlay.style.display = 'block';
+        modal.style.display = 'block';
     })
 
     modalClose.addEventListener('click', (e) => {
-        body.classList.remove('disable-scroll')
-        modal.style.display = 'none'
-        modalOverlay.style.display = 'none'
-        modal.style.opacity = '0'
+        body.classList.remove('disable-scroll');
+        modal.style.display = 'none';
+        modalOverlay.style.display = 'none';
+        modal.style.opacity = '0';
     })
 
     modalOverlay.addEventListener('click', (e) => {
-        body.classList.remove('disable-scroll')
-        modal.style.display = 'none'
-        modalOverlay.style.display = 'none'
-        modal.style.opacity = '0'
+        body.classList.remove('disable-scroll');
+        modal.style.display = 'none';
+        modalOverlay.style.display = 'none';
+        modal.style.opacity = '0';
     })
 
 
