@@ -1,11 +1,8 @@
 const form = () => {
     const form = document.querySelector('form');
-
     const name = form.querySelector('input[name=fio]');
     const phone = form.querySelector('input[name=tel]');
-
     const submit = form.querySelector('.button');
-
     const statusBlock = document.createElement('div');
     const loadText = 'Идет отправка...';
     const errorText = 'Ошибка...';

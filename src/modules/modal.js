@@ -12,15 +12,15 @@ const modal = () => {
     console.log(body);
 
 
-    modalFormName.addEventListener('blur', (e) => {
-        e.target.value = e.target.value.replace(/[^А-Яа-я -]/gi, '').replace(/\ \ +/gi, ' ').replace(/\-\-+/gi, '-').replace(/^\s/g, '').replace(/\s$/g, '').toLowerCase().replace(/([^а-я]|^)([а-я])(?=[а-я]{2})/g, function (_, g1, g2) {
-            return g1 + g2.toUpperCase();
-        })
-    })
+    // modalFormName.addEventListener('blur', (e) => {
+    //     e.target.value = e.target.value.replace(/[^А-Яа-я -]/gi, '').replace(/\ \ +/gi, ' ').replace(/\-\-+/gi, '-').replace(/^\s/g, '').replace(/\s$/g, '').toLowerCase().replace(/([^а-я]|^)([а-я])(?=[а-я]{2})/g, function (_, g1, g2) {
+    //         return g1 + g2.toUpperCase();
+    //     })
+    // })
 
-    modalFormPhone.addEventListener('blur', (e) => {
-        e.target.value = e.target.value.replace(/[^\d()+]/gi, '').replace(/\ \ +/gi, ' ').replace(/\-\-+/gi, '-').replace(/^\s/g, '').replace(/\s$/g, '');
-    })
+    // modalFormPhone.addEventListener('blur', (e) => {
+    //     e.target.value = e.target.value.replace(/[^\d()+]/gi, '').replace(/\ \ +/gi, ' ').replace(/\-\-+/gi, '-').replace(/^\s/g, '').replace(/\s$/g, '');
+    // })
 
     buttons.addEventListener('click', () => {
         if (document.documentElement.clientWidth > 768) {

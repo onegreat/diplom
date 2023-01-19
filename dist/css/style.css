@@ -984,9 +984,20 @@ hr.white {
 	.top-menu>ul>li>a {
 		font-size: 16px;
 	}
+
+	.swiper-pagination-bullet {
+		border: 1px solid #fff;
+		width: 10px;
+		height: 10px;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #fff;
+	}
 }
 
 /* top slider */
+
 .top-slider .slick-dots {
 	position: absolute;
 	bottom: 25px;
