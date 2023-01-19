@@ -9,8 +9,6 @@ const modal = () => {
     const modalFormPhone = document.querySelector('#tel')
     const body = document.body
 
-    console.log(body);
-
 
     // modalFormName.addEventListener('blur', (e) => {
     //     e.target.value = e.target.value.replace(/[^А-Яа-я -]/gi, '').replace(/\ \ +/gi, ' ').replace(/\-\-+/gi, '-').replace(/^\s/g, '').replace(/\s$/g, '').toLowerCase().replace(/([^а-я]|^)([а-я])(?=[а-я]{2})/g, function (_, g1, g2) {
