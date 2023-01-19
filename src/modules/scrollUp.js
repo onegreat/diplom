@@ -3,7 +3,7 @@ const scrollUp = () => {
     const arrowTop = document.querySelector('.up');
 
     arrowTop.onclick = function () {
-        window.scrollTo(window.pageXOffset, 0);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     window.addEventListener('scroll', function () {

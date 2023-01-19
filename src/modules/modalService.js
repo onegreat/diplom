@@ -4,7 +4,6 @@ const modalService = () => {
     const overlay = document.querySelector('.modal-overlay');
     const closeBtn = document.querySelector('.modal-close');
     const slideBtn = document.querySelectorAll('.fancyboxModal');
-
     const btn = document.querySelector('.up');
 
 
