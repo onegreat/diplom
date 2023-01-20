@@ -5,6 +5,10 @@ const modalService = () => {
     const closeBtn = document.querySelector('.modal-close');
     const slideBtn = document.querySelectorAll('.fancyboxModal');
     const btn = document.querySelector('.up');
+    const body = document.querySelector('body');
+    const screenWidth = window.screen.width;
+
+    console.log(body);
 
 
     slideBtn.forEach((item) => {
@@ -28,6 +32,26 @@ const modalService = () => {
         btn.style.display = 'block';
     }
 
+    function scrolRemove() {
+        let div = document.createElement('div');
+
+        div.style.overflowY = 'scroll';
+        div.style.width = '50px';
+        div.style.height = '50px';
+
+        document.body.append(div);
+        let scrollWidth = div.offsetWidth - div.clientWidth;
+        div.remove();
+
+        console.log(scrollWidth);
+        body.style.width = screenWidth + scrollWidth
+        console.log(screenWidth);
+
+    }
+
+
+    scrolRemove()
+    console.log(scrolRemove);
     overlay.addEventListener('click', closeModal);
     closeBtn.addEventListener('click', closeModal);
 };

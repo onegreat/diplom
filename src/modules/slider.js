@@ -14,11 +14,9 @@ const slider = () => {
         },
     });
 
-    const swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".carousel-container", {
         slidesPerView: 3,
-        loopedSlides: 3,
-        spaceBetween: 10,
-
+        spaceBetween: 30,
         loop: true,
         navigation: {
             nextEl: ".arrow-right",
