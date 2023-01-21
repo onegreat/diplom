@@ -1,8 +1,6 @@
 const accordeon = () => {
-    const elements = document.querySelectorAll('.accordeon-element');
-    const contents = document.querySelectorAll('.accordeon-element>element-content');
-
-
+    const elements = document.querySelectorAll('.element');
+    const contents = document.querySelectorAll('.element-content');
 
     elements.forEach(el => {
         el.addEventListener('click', (e) => {
@@ -15,15 +13,12 @@ const accordeon = () => {
             });
 
             const self = e.currentTarget;
-
             const content = self.querySelector('.element-content');
 
             self.classList.add('active');
 
-
             if (self.classList.contains('active')) {
                 content.classList.add('active');
-                elements.style.display = 'block'
             } else {
                 el.classList.remove('active');
             }
