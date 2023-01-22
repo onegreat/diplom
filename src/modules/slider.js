@@ -21,7 +21,17 @@ const slider = () => {
         navigation: {
             nextEl: ".arrow-right",
             prevEl: ".arrow-left",
-        },
+        }, breakpoints: {
+            500: {
+                slidesPerView: 1,
+            },
+            850: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        }
     });
 };
 
