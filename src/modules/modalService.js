@@ -1,4 +1,6 @@
 import { calcScroll } from "./helpers";
+import scrollUp from "./scrollUp"
+
 const modalService = () => {
     const btnService = document.querySelector('.button-services');
     const modal = document.querySelector('.modal-callback');
@@ -44,7 +46,8 @@ const modalService = () => {
             modal.style.display = 'block';
             overlay.style.display = 'block';
             modal.style.opacity = '1';
-            btn.style.display = 'none';
+            // btn.style.display = 'none';
+            btn.style.opacity = '0'
 
         });
     });
@@ -55,7 +58,8 @@ const modalService = () => {
         modal.style.display = 'block';
         modal.style.opacity = '1';
         overlay.style.display = 'block';
-        btn.style.display = 'none';
+        // btn.style.display = 'none';
+        btn.style.opacity = '0'
 
     });
 
@@ -64,11 +68,13 @@ const modalService = () => {
         body.style.paddingRight = 0 + 'px'
         modal.style.display = 'none';
         overlay.style.display = 'none';
-        btn.style.display = 'block';
+        // btn.style.display = 'block';
+        btn.style.opacity = '1'
+
     }
 
-    overlay.addEventListener('click', closeModal);
-    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', closeModal,);
+    closeBtn.addEventListener('click', closeModal,);
 };
 
 export default modalService;
