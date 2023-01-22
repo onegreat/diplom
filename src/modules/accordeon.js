@@ -1,5 +1,5 @@
 const accordeon = () => {
-    const elements = document.querySelectorAll('.element');
+    const elements = document.querySelectorAll('.accordeon .element');
     const contents = document.querySelectorAll('.element-content');
 
     elements.forEach(el => {
@@ -15,12 +15,10 @@ const accordeon = () => {
             const self = e.currentTarget;
             const content = self.querySelector('.element-content');
 
-            self.classList.add('active');
+            self.classList.toggle('active');
 
             if (self.classList.contains('active')) {
                 content.classList.add('active');
-            } else {
-                el.classList.remove('active');
             }
         });
     });
